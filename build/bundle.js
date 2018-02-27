@@ -7057,7 +7057,7 @@ module.exports = memoizeStringOnly;
 
 var express = __webpack_require__(53);
 var React = __webpack_require__(21);
-var rederToString = __webpack_require__(109).renderToString;
+var renderToString = __webpack_require__(109).renderToString;
 var Home = __webpack_require__(118).default;
 var app = express();
 
