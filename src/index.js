@@ -2,7 +2,13 @@ const express = require('express');
 const React = require('react');
 const renderToString = require('react-dom/server').renderToString;
 const Home = require('./client/components/Home').default;
+
+import express from 'express';
+import React from 'react';
+
+
 const app = express();
+
 
 
 app.get('/', (req, res) => {
