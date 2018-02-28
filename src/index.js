@@ -5,7 +5,7 @@ const Home = require('./client/components/Home').default;
 
 import express from 'express';
 import React from 'react';
-
+import { renderToString } from 'react-dom/server';
 
 const app = express();
 
