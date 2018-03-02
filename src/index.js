@@ -10,6 +10,15 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
      const content = renderToString(<Home />);
 
+     const html = `
+        <html>
+         <head></head>
+          <body>
+           <div>${content}</div>
+          </body>
+        </html>
+     `;
+
      res.send(content);
 });
 
