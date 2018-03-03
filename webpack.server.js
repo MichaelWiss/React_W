@@ -1,4 +1,6 @@
 const path = require('path');
+const merge = require('webpack-merge');
+const baseConfig = required('./webpack.base.js');
 
 
 module.exports = {
