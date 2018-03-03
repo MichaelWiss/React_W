@@ -15,11 +15,12 @@ app.get('/', (req, res) => {
          <head></head>
           <body>
            <div>${content}</div>
+           <script src="bundle.js"></script>
           </body>
         </html>
      `;
 
-     res.send(content);
+     res.send(html);
 });
 
 
