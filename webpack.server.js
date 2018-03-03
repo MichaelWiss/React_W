@@ -3,7 +3,7 @@ const merge = require('webpack-merge');
 const baseConfig = required('./webpack.base.js');
 
 
-module.exports = {
+const config = {
    //inform webpack that we are building a bundle for node js
    target: 'node',
    //tell webpack the root file of our server app
@@ -14,3 +14,5 @@ module.exports = {
    path: path.resolve(__dirname, 'build')
    }
 };
+
+module.exports = merge(baseConfig, config);
