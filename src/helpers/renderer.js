@@ -3,10 +3,10 @@ import { renderToString } from 'react-dom-server';
 import { StaticRouter } from 'react-router-dom';
 import Routes from '../client/Routes';
 
-export default () => {
+export default (req) => {
      const content = renderToString(
-      <StaticRouter contest={{}}>
-      <Routes />
+      <StaticRouter location={req.path} contest={{}}>
+        <Routes />
       </StaticRouter>
       );
 
