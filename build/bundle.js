@@ -170,7 +170,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = function (req) {
   var content = (0, _reactDomServer.renderToString)(_react2.default.createElement(
     _reactRouterDom.StaticRouter,
-    { location: req.path, contest: {} },
+    { location: req.path, context: {} },
     _react2.default.createElement(_Routes2.default, null)
   ));
 
