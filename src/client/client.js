@@ -7,9 +7,13 @@ import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import Routes from './Routes';
 
+const store = createStore(reducers, {}, applyMiddleware(thunk))
+
 ReactDom.hydrate(
-	<BrowserRouter>
-	 <Routes />
-	</BrowserRouter> 
+	<Provider store={store}>
+	  <BrowserRouter>
+	   <Routes />
+	  </BrowserRouter>
+	</Provider> 
 	, document.querySelector('#root')
 );
